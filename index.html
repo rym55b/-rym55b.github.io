@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "fr">
+<head>
+    <meta charset= "UTF-8">
+    <meta name = "viewport" content= "width=device-width, initial-scale=1.0">
+	<title> Calculatrice </title>
+	<link rel= "stylesheet" href= "cal.css">
+	<style>
+	
+	
+	
+	</style>
+	
+</head>
+<h1> bienvenue à ma calculatrice </h1>	
+<body>	
+ <div class="screen" id = "screen">
+        0 <!-- Contenu initial de l'écran -->
+    </div>
+
+  <form action="https://formspree.io/f/mvgzzbrk" method="POST">
+        <label for="message">تفضل اكتب</label><br>
+        <textarea id="message" name="message" placeholder="أكتب رسالة لريم" rows="4" cols="50" dir="rtl"></textarea><br><br>
+
+        <button type="submit">ارسال</button>
+    </form>
+
+<table>	
+
+<tr><td onclick="nbrpris(1)">1</td>    <td onclick="nbrpris(2)">2</td>      <td onclick="nbrpris(3)">3</td>  <td onclick="retour()" >⬅</td>     </tr>
+<tr><td onclick="nbrpris(4)">4</td>    <td onclick="nbrpris(5)">5</td>      <td onclick="nbrpris(6)" >6</td>  <td onclick="oppris('/')">/</td>      </tr>
+<tr><td onclick="nbrpris(7)">7</td>    <td onclick="nbrpris(8)">8</td>      <td onclick="nbrpris(9)">9</td>    <td onclick="oppris('*')">*</td>    </tr>
+<tr><td onclick="nbrpris(0)">0</td> <td onclick="oppris('+')">+</td><td onclick="oppris('-')">-</td>    <td  onclick="efface()">C</td><tr>
+  <tr>
+          <tr> <td colspan="4" onclick="calculresult()" >=</td>
+
+</tr>
+        </tr>
+</table>
+
+  <script src="calc.js"></script> <!-- Lien vers le fichier JavaScript -->
+
+</body>
+</html>
